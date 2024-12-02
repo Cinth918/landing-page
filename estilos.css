@@ -1,0 +1,455 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Raleway";
+    flex-direction: row;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+header{
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    align-items: center;  
+    margin: 0px;    
+    position: fixed;
+    background-color: #f8f8ff;
+    flex-direction: column;
+}
+
+   
+
+.logo{
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{   
+    height: 40px;
+}
+
+nav{
+    padding: 10px 0px;
+    
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding:  10px;
+    font-size: 0.9em;
+}
+
+nav :hover{
+    color: #666f98;
+    font-size: 17px;   
+}
+
+
+
+.imagenfalsa{
+    min-height: 40px;
+}
+
+.hero{
+    color: #ffffff;
+    padding: 100px 30px;
+    text-align: center;
+    justify-content: center;
+    min-height: 300px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url(img/kaboompics_wintery-park-7272-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+.hero h1{
+    font-size: 2em;
+    
+}
+
+.boton-principal{
+    width: 250px;
+}
+
+.texto{
+
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    color: #2b324e;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    margin: 0%;
+}
+
+.texto h2{
+    color: #2b324e;
+    font-size: 1.3em;
+}
+.texto h4{
+    font-size: 0.8em;
+    margin: 0%;
+    padding-left: 20px;
+}
+.texto p{
+    margin: 0%;
+    font-size: 0.6em;
+    padding-left: 20px;
+}
+
+.number-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.number{
+    padding:20px;
+}
+.number h3{
+    margin: 0px;
+}
+
+.number p{
+    margin: 0px;
+    font-size: 0.8em;
+}
+
+.collage {
+    display: flex; 
+    /*width: 100%;  Un poco de margen en los laterales */
+    max-width: 1000px;
+    max-height: 1000px; 
+    padding: 5px;
+    
+
+}
+
+/* Estilo para cada imagen */
+.column-container {
+    padding: 5px;
+    flex-direction: row;  /* De inicio, las imágenes estarán en columna */
+   /* width: 100%; Las imágenes ocupan el 100% del ancho del contenedor 
+    overflow: hidden;  Para evitar que las imágenes se desborden 
+    max-height: 200px;*/
+
+
+}
+
+.column-container img {
+    width: 100%; /* Las imágenes se ajustan al contenedor */
+    height: auto;
+    display: block; /* Para evitar el espacio extra debajo de las imágenes */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ 
+
+.parrafo2{
+    background-color:#000000 ;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right:30px ;
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+.parrafo2 img{
+    
+    border-radius: 50px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    /*vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+ 
+}
+
+.parrafo2 p{
+    font-size: 0.8em;
+}
+
+
+.parrafo3{
+    
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom,#ffffff 70%,#2b324e 30%);
+}
+
+.parrafo3 h1 {
+    
+    color: #2b324e;
+}
+
+.parrafo3 h3{
+    color: #2b324e;
+    padding-top: 30px;
+    margin:0px;
+}
+
+.parrafo3 h4{
+    color: #2b324e;
+    margin:0px;
+    padding-bottom: 30px;
+}
+
+.parrafo3 p{
+    color: #2b324e;
+    margin: 0px;
+}
+
+
+
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url(img/kaboompics_stylish-asian-fashion-model-21794-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f7b176ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+button:hover {
+    background-color: #404668ff;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.parrafos{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactos{
+text-align: justify;
+padding: 15px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    margin-right: 20px;
+    
+    border-radius: 50px;
+    background-color: white;
+
+}
+.peque{
+    font-size: 0.7em;
+}
+
+@media (min-width:768px){
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+     nav{
+        padding-right:30px;
+        
+    }
+
+    section{
+        justify-content: center;
+    }
+
+    .container{
+       
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+    .beneficios{
+        align-content: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .beneficios .texto{
+        width: 50%;
+    }
+
+    .texto h2{
+        font-size: 2em;
+    }
+
+    .number h3{
+        font-size: 1.3em;
+    }
+    .collage{ 
+        padding: 20px;
+        margin: 10px;
+        overflow: hidden;
+        align-items: center;
+        max-width: 50%;
+        max-height: 400px;
+    }
+
+    .column-container {
+        max-height: 500px;
+        
+        align-items: center;
+    }
+
+    .parrafo2{
+        padding: 20px;
+    }
+    
+    .parrafo2 h3{
+        font-size: 1.5em;
+    }
+
+    
+}
+
+
+/* CSS HEX *
+--white: #fefefe;
+--glaucous: #666f98;
+--delft-blue: #404668;
+--space-cadet: #2b324e;
+--sandy-brown: #f7b176;*/
+
+/* CSS HSL 
+--white: hsla(0, 0%, 100%, 1);
+--glaucous: hsla(229, 20%, 50%, 1);
+--delft-blue: hsla(231, 24%, 33%, 1);
+--space-cadet: hsla(228, 29%, 24%, 1);
+--sandy-brown: hsla(27, 89%, 72%, 1);*/
+
+/* SCSS HEX 
+$white: #fefefeff;
+$glaucous: #666f98ff;
+$delft-blue: #404668ff;
+$space-cadet: #2b324eff;
+$sandy-brown: #f7b176ff;*/
+
+/* SCSS HSL 
+$white: hsla(0, 0%, 100%, 1);
+$glaucous: hsla(229, 20%, 50%, 1);
+$delft-blue: hsla(231, 24%, 33%, 1);
+$space-cadet: hsla(228, 29%, 24%, 1);
+$sandy-brown: hsla(27, 89%, 72%, 1);*/
+
+/* SCSS RGB 
+$white: rgba(254, 254, 254, 1);
+$glaucous: rgba(102, 111, 152, 1);
+$delft-blue: rgba(64, 70, 104, 1);
+$space-cadet: rgba(43, 50, 78, 1);
+$sandy-brown: rgba(247, 177, 118, 1);*/
+
+/* SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-right: linear-gradient(90deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-bottom: linear-gradient(180deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-left: linear-gradient(270deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-top-right: linear-gradient(45deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-bottom-right: linear-gradient(135deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-top-left: linear-gradient(225deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-bottom-left: linear-gradient(315deg, #fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);
+$gradient-radial: radial-gradient(#fefefeff, #666f98ff, #404668ff, #2b324eff, #f7b176ff);*/
